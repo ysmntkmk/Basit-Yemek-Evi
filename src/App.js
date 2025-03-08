@@ -1,4 +1,18 @@
-import './styles.css'
+import React from 'react';
+import './styles.css';
+import Header from './components/Header';
+import Main from './components/Main';
+import Footer from './components/Footer';
+
+const App = () => (
+  <div>
+    <Header />
+    <Main />
+    <Footer />
+  </div>
+);
+
+export default App;
 /* Challenge: 
 
 Bu web sayfası, HTML öğeleri vanilla JS ile DOM'a eklenerek oluşturulmuştur. Göreviniz JS'yi React JSX'e dönüştürmek ve React ile sayfaya render etmek. İşte istediğimiz şeyler: 
@@ -12,7 +26,7 @@ Bu web sayfası, HTML öğeleri vanilla JS ile DOM'a eklenerek oluşturulmuştur
         4. Kod modüler ve iyi organize edilmiş olmalıdır.
 */
 
-const header = `<header>
+/*const header = `<header>
                     <div class="button-container">
                         <button>Menu</button> 
                         <button>Hakkında</button> 
@@ -55,3 +69,4 @@ const footer = `<footer>
 document.body.innerHTML += footer
 
 export default header
+*/
